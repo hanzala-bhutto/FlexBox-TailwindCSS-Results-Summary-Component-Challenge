@@ -15,15 +15,59 @@
   </style>
 </head>
 <body>
-<main class=" h-screen flex items-center justify-center">
-    <section class="flex items-end">
-        <h1 class=" bg-black">Hero</h1>
+<main class="md:h-screen md:flex md:items-center md:justify-center bg-slate-200">
+    <section class="h-screen md:h-auto flex flex-col md:flex-row md:rounded-3xl bg-white">
+        <div class=" md:w-80 py-8 md:py-10 px-14 flex flex-col items-center gap-5 bg-blue-600 text-white rounded-b-3xl md:rounded-3xl">
+            <h1 class="text-2xl text-gray-300 font-bold">Your Result</h1>
+            <div class="flex flex-col items-center py-6 px-8 md:py-11 md:px-14 rounded-full bg-blue-700">
+                <p class=" text-7xl text-bold">76</p>
+                <p class="text-gray-300">of 100</p>
+            </div>
+            <h2 class="text-4xl font-bold">Great</h2>
+            <p class="text-center text-gray-300">You scored higher than 65% of the people who have taken these tests.
+            </p>
+        </div>
+
+        <div class="flex-auto md:w-80 py-10 px-10 flex flex-col gap-7">
+            <h2 class=" text-2xl font-bold">Summary</h2>
+            <article class="flex flex-col gap-6 md:gap-4 text-lg">
+            <div class="flex flex-row justify-between p-4 md:p-3 rounded-lg bg-red-50">
+                <div class="flex flex-row gap-3">
+                    <img src="assets/images/icon-reaction.svg"/>
+                    <p class=" text-red-400 font-bold">Reaction</p>
+                </div>
+                <p class="font-bold">80<span class="text-gray-400"> / 100</span></p>
+            </div>
+            <div class="flex flex-row justify-between p-4 md:p-3 rounded-lg bg-yellow-50">
+                <div class="flex flex-row gap-3">
+                    <img src="assets/images/icon-memory.svg"/>
+                    <p class=" text-yellow-400 font-bold">Memory</p>
+                </div>
+                <p class="font-bold">92<span class="text-gray-400"> / 100</span></p>
+            </div>
+            <div class="flex flex-row justify-between p-4 md:p-3 rounded-lg bg-teal-50">
+                <div class="flex flex-row gap-3">
+                    <img src="assets/images/icon-verbal.svg"/>
+                    <p class=" text-teal-400 font-bold">Verbal</p>
+                </div>
+                <p class="font-bold">61<span class="text-gray-400"> / 100</span></p>
+            </div>
+            <div class="flex flex-row justify-between p-4 md:p-3 rounded-lg bg-violet-50">
+                <div class="flex flex-row gap-3">
+                    <img src="assets/images/icon-visual.svg"/>
+                    <p class=" text-violet-500 font-bold">Visual</p>
+                </div>
+                <p class="font-bold">72<span class="text-gray-400"> / 100</span></p>
+            </div>
+            </article>
+            <div class="text-center py-3 bg-blue-950 text-white rounded-3xl hover:bg-blue-600 cursor-pointer">Continue</div>
+        </div>
     </section>
 </main>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Hanzala</a>.
-  </div>
+  </div> -->
 </body>
 </html>
